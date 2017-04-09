@@ -1,0 +1,50 @@
+body {
+    font-family: monospace;
+    margin: 0;
+}
+#screen {
+    overflow-x: scroll;
+}
+#belt {
+    display: flex;
+    height: 18px;
+    width: 500%;
+    overflow-y: hidden;
+}
+[is="thick"] {
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-basis*/
+}
+[is="ticks"] {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+[is="txt"] {
+    padding-right: 14px;
+}
+
+/* some extra glamour */
+[is="thick"] > [is="tick"] {
+    border-left: solid 2px cornflowerblue;
+    margin-left: -2px;
+}
+[is="ticks"] > [is="tick"] {
+    border-left: solid 1px cadetblue;
+    margin: 0 -1px;
+    margin-top: 3px;
+}
+[is="ticks"] > [is="tick"] > [is="txt"] {
+    margin-top: -3px;
+}
+#screen {
+    background: wheat;
+}
+#belt {
+    margin: 20px 0;
+}
+body {
+    padding: 20px;
+    background: floralwhite;
+}
